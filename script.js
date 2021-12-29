@@ -27,8 +27,7 @@ var allHours = [hourA,hourB,hourC,hourD,hourE,hourF,hourG,hourH,hourI,hourJ,hour
     hourM,hourN,hourO,hourP,hourQ,hourR,hourS,hourT,hourU,hourV,hourW,hourX];
 
 
-var saveBtn = document.querySelector(".saveBtn")
-
+var saveBtns = document.getElementsByClassName("saveBtn")
 var time = moment().format("H");
 console.log(time);
 var today = moment().format("MMM Do, YYYY");
@@ -47,3 +46,57 @@ for(var i = 0; i < allHours.length; i++){
     }
 }
 
+for (var i = 0; i < saveBtns.length; i++) {
+    saveBtns[i].addEventListener("click", function () {
+        console.log("saved");
+        localStorage.setItem("hourA", hourA.value);
+        localStorage.setItem("hourB", hourB.value);
+        localStorage.setItem("hourC", hourC.value);
+        localStorage.setItem("hourD", hourD.value);
+        localStorage.setItem("hourE", hourE.value);
+        localStorage.setItem("hourF", hourF.value);
+        localStorage.setItem("hourG", hourG.value);
+        localStorage.setItem("hourH", hourH.value);
+        localStorage.setItem("hourI", hourI.value);
+        localStorage.setItem("hourJ", hourJ.value);
+        localStorage.setItem("hourK", hourK.value);
+        localStorage.setItem("hourL", hourL.value);
+        localStorage.setItem("hourM", hourM.value);
+        localStorage.setItem("hourN", hourN.value);
+        localStorage.setItem("hourO", hourO.value);
+        localStorage.setItem("hourP", hourP.value);
+        localStorage.setItem("hourQ", hourQ.value);
+        localStorage.setItem("hourR", hourR.value);
+        localStorage.setItem("hourS", hourS.value);
+        localStorage.setItem("hourT", hourT.value);
+        localStorage.setItem("hourU", hourU.value);
+        localStorage.setItem("hourV", hourV.value);
+        localStorage.setItem("hourW", hourW.value);
+        localStorage.setItem("hourX", hourX.value);
+
+    });
+}
+hourA.value = localStorage.getItem("hourA");
+hourB.value = localStorage.getItem("hourB");
+hourC.value = localStorage.getItem("hourC");
+hourD.value = localStorage.getItem("hourD");
+hourE.value = localStorage.getItem("hourE");
+hourF.value = localStorage.getItem("hourF");
+hourG.value = localStorage.getItem("hourG");
+hourH.value = localStorage.getItem("hourH");
+hourI.value = localStorage.getItem("hourI");
+hourJ.value = localStorage.getItem("hourJ");
+hourK.value = localStorage.getItem("hourK");
+hourL.value = localStorage.getItem("hourL");
+hourM.value = localStorage.getItem("hourM");
+hourN.value = localStorage.getItem("hourN");
+hourO.value = localStorage.getItem("hourO");
+hourP.value = localStorage.getItem("hourP");
+hourQ.value = localStorage.getItem("hourQ");
+hourR.value = localStorage.getItem("hourR");
+hourS.value = localStorage.getItem("hourS");
+hourT.value = localStorage.getItem("hourT");
+hourU.value = localStorage.getItem("hourU");
+hourV.value = localStorage.getItem("hourV");
+hourW.value = localStorage.getItem("hourW");
+hourX.value = localStorage.getItem("hourX");
